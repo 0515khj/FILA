@@ -99,7 +99,6 @@
     font-weight: 700;
     color: #111;
     margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
 }
 
 .detailRight .sizetitle {
@@ -266,7 +265,6 @@
 
 }
 
-.detailRight .reduceBox .reduceLeft {}
 
 .detailRight .reduceBox .reduceRight {
     background-image: url('images/reduce.png');
@@ -274,7 +272,7 @@
     background-position: center left 20px;
     display: flex;
     height: 100px;
-    padding: 0 20px 0 90px;
+    padding: 35px 20px 0 90px;
     justify-content: center;
     align-items: center;
     gap: 5px;
