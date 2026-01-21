@@ -1,0 +1,128 @@
+.join img{width: 30px;}
+
+
+.join {
+    padding: 180px 0 100px;
+}
+.join .container {
+}
+.join .container .join-title {
+    text-align: center;
+}
+.join .container .join-title h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.join .container .join-title h4 {
+    margin-bottom: 50px;
+    color: #999;
+}
+
+.join .joinBox {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.join .joinBox .btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.join .joinBox .btn-box .btnBox {
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.join .joinBox .btn-box .btnBox p {
+  font-size: 18px;
+}
+
+.join .joinBox .btn-box .kakaoBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gold;
+    padding: 10px 20px;
+    position: relative;
+}
+.join .joinBox .btn-box .kakaoBox img {
+    width: 30px; height: 28px; padding: 5px;
+    position: absolute; left: 5%;
+}
+.join .joinBox .btn-box .kakaoBox img {}
+
+.join .joinBox .btn-box .checkBox {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join .joinBox .btn-box .checkBox:hover {
+    background: #002053;
+}
+.join .joinBox .btn-box .checkBox:hover p {
+    color: #fff;
+}
+
+.join .joinBoon {
+    width: 100%;
+}
+.join .joinBoon h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.join .joinBoon .boonBox {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+.join .joinBoon .boon {
+    display: flex;
+    height: 50px;
+    padding: 0 20px 0 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.join .joinBoon .boon1 img {
+    width: 43px;
+}
+.join .joinBoon .boon2 img {
+    height: 40px;
+}
+.join .joinBoon .boon3 img {
+    height: 44px;
+}
+.join .joinBoon .boon:nth-of-type(1) {
+    background-image: url('images/joinCu.png');
+}
+.join .joinBoon .boon:nth-of-type(2) {
+    background-image: url('images/joinPo.png');
+}
+.join .joinBoon .boon:nth-of-type(3) {
+    background-image: url('images/joinCo.png');
+}
+.join .joinBoon .boon:nth-of-type(4) {
+    background-image: url('images/joinDe.png');
+}
+.join .joinBoon .boon {
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+}

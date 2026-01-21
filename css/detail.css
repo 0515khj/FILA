@@ -1,0 +1,774 @@
+.detailMain {
+    padding-top: 100px;
+}
+
+.detailMain .container2 {
+    display: flex;
+    padding-top: 50px;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+.detailLeft {
+    width: 60%;
+    position: sticky;
+    top: 121px;
+    left: 0;
+}
+
+.detailRight {
+    width: 40%;
+    min-width: 320px;
+}
+
+.detailLeft .mySwiper {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+.detailLeft .mySwiper .swiper-wrapper {
+    height: 100%;
+}
+
+.detailLeft .mySwiper .swiper-slide {
+    height: 100%;
+    display: flex;
+}
+
+.detailLeft .mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #fff;
+}
+
+
+.mySwiper2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide {}
+
+.mySwiper2 .swiper-slide img {
+    height: 700px;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+    background: #000;
+}
+
+
+
+.detailRight {
+    width: 40%;
+    min-width: 320px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.detailRight .list {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.detailRight .list li {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: #555;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.detailRight h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.detailRight p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.detailRight .sizetitle {
+    margin: 40px 0;
+}
+
+.detailRight .sizetitle p {
+    margin-bottom: 0;
+}
+
+.detailRight h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detailRight .detailColor {}
+
+.detailRight .detailColor h3 {
+    margin-bottom: 40px;
+}
+
+.detailRight .detailColor .img-box {
+    width: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+.detailRight .detailColor .img-box img {
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.detailRight .detailColor .img-box img:hover {
+    border-bottom: 3px solid #000;
+}
+
+.detailRight .detailSize {
+    width: 100%;
+}
+
+.detailRight .detailSize .sizetitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailRight .detailSize .sizetitle p {
+    border-bottom: 1px solid #1a1a1a;
+    color: #1a1a1a;
+}
+
+
+.detailRight .detailSize .btn-box {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.detailRight .detailSize button.active {
+    background: #002053;
+    color: #fff;
+}
+
+.detailRight .detailSize .btn-box button {
+
+    max-width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailRight .numBtn {
+    height: 60px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 10px;
+}
+
+.detailRight .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.detailRight .price h3 {}
+
+.detailRight .price p {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.detailRight .price p span {}
+
+.detailRight .buyBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.detailRight .buyBtn .buy {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    background: #002053;
+    color: #fff;
+    border-radius: 50px;
+
+}
+
+.detailRight .buyBtn .cartBox {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.detailRight .buyBtn .cartBox i {
+    color: #999;
+    width: 70px;
+    height: 60px;
+    font-size: 32px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.detailRight .buyBtn .cartBox i.active {
+    color: #D32F2F;
+}
+
+.detailRight .buyBtn .cartBox p {
+    width: 70%;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 70px);
+    height: 60px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.detailRight .buyBtn .cartBox p:hover {
+    background: #002053;
+    color: #fff;
+    border: none;
+}
+
+.detailRight .reduceBox {
+    width: 100%;
+    display: flex;
+
+}
+
+
+.detailRight .reduceBox .reduceRight {
+    background-image: url('images/reduce.png');
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+    display: flex;
+    height: 100px;
+    padding: 35px 20px 0 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.detailRight .acoMenu {
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+}
+
+.detailRight .acoMenu .acoItem p {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.detailRight .acoMenu .acoItem {
+    border-bottom: 1px solid #ddd;
+}
+
+.detailRight .acoMenu .acoH3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.detailRight .acoMenu .acoH3:hover {
+    color: #002053;
+}
+
+.detailRight .acoMenu .acoH3 h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.detailRight .acoMenu .acoH3 i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.detailRight .acoMenu .acoH3.active i {
+    transform: rotate(180deg);
+}
+
+.detailRight .acoMenu .acoItem p {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 0;
+}
+
+.detailRight .acoMenu .acoItem.open p {
+    max-height: 500px;
+    padding: 0 0 20px 0;
+}
+
+.detailRight .exBox {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.detailRight .exBox p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.detailRight .exBox p:last-child {
+    margin-bottom: 0;
+}
+
+.detailRight .detailBanner {
+    margin-top: 30px;
+}
+
+.detailRight .detailBanner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.detailRight .detailInfo {
+    margin-top: 50px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.detailRight .detailInfo h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.detailRight .detailInfo h4:first-child {
+    margin-top: 0;
+}
+
+.detailRight .detailInfo p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.detailRight .detailInfo button {
+    margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.detailRight .detailInfo button:hover {
+    background: #002053;
+    color: #fff;
+    border-color: #002053;
+}
+
+
+.promo-banner {
+    width: 100%;
+    background: #002053;
+    padding: 50px 0;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.promo-banner:hover {
+    background: #001538;
+}
+
+.promo-banner .inner {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.promo-banner .inner p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.promo-banner .inner p span {
+    font-weight: 700;
+    color: #ffce00;
+}
+
+.promo-banner .inner i {
+    font-size: 14px;
+}
+
+
+
+.container3 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.swiperTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.swiperTitle h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.modelInfo {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.modelInfo p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.checkTitle {
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.checkTitle h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.fitguide {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.fitTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fitTitle h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.fitList {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.fitList li {
+    flex: 1;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 30px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 160px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fitList li h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #bbb;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.fitList li p {
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+
+.fitList li.fitCheck {
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.fitList li.fitCheck h3 {
+    color: #000;
+}
+
+.fitList li.fitCheck p {
+    color: #333;
+}
+
+
+.info {
+    padding-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info .infoTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info .infoTitle h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.info .Box {
+    padding-bottom: 50px;
+}
+
+.info .Box h4 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+.info .Box .infotext {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+}
+
+.info .Box .infotext::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.info .Box .infotext p {
+    position: relative;
+    font-size: 14px;
+    color: #000;
+    z-index: 1;
+}
+
+.info .Box .infotext p::after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #dcdcdc;
+
+    position: absolute;
+    top: -19px;
+}
+
+.info .Box .infotext p:first-child {
+    text-align: left;
+}
+
+.info .Box .infotext p:first-child::after {
+    left: 0;
+}
+
+.info .Box .infotext p:nth-child(2) {
+    text-align: center;
+}
+
+.info .Box .infotext p:nth-child(2)::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info .Box .infotext p:last-child {
+    text-align: right;
+}
+
+.info .Box .infotext p:last-child::after {
+    right: 0;
+}
+
+.info .Box .infotext p.active::after {
+    background: #000;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .detailMain .container2 {
+        gap: 30px;
+    }
+
+    .detailRight {
+        padding-left: 20px;
+        min-width: auto;
+    }
+
+    .container3 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detailMain {
+        padding-top: 80px;
+    }
+
+    .detailMain .container2 {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+    }
+
+    .detailLeft {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    .detailLeft .mySwiper {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    .detailLeft .mySwiper .swiper-slide {
+        display: block;
+    }
+
+    .detailLeft .mySwiper .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detailRight {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .detailRight h2 {
+        font-size: 24px;
+    }
+
+    .detailRight>p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .detailRight .list {
+        margin-bottom: 15px;
+    }
+
+    .detailRight .detailSize .btn-box {
+        flex-wrap: wrap;
+    }
+
+    .detailRight .detailSize .btn-box button {
+        flex: 1 1 30%;
+        max-width: none;
+    }
+
+    .detailRight .buyBtn .buy {
+        font-size: 18px;
+    }
+
+    .detailRight .reduceBox .reduceRight {
+        padding: 0 10px 0 80px;
+        background-position: center left 10px;
+        font-size: 13px;
+    }
+
+    .container3 {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 60px;
+        box-sizing: border-box;
+    }
+
+    .mySwiper2 .swiper-slide img {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    .fitList {
+        flex-wrap: wrap;
+    }
+
+    .fitList li {
+        flex: 1 1 45%;
+        min-height: 140px;
+    }
+
+    .info .Box .infotext::before {
+        top: 8px;
+    }
+
+    .info .Box .infotext p {
+        font-size: 12px;
+    }
+
+    .promo-banner {
+        padding: 30px 0;
+    }
+
+    .promo-banner .inner p {
+        font-size: 14px;
+    }
+}
