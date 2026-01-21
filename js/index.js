@@ -137,14 +137,16 @@ document.addEventListener("DOMContentLoaded", e => {
                 div.classList.add('cateItem'); 
 
                 div.innerHTML = `
-                    <div class="img-box">
-                        <img src="${item.img}" alt="${item.title}">
-                    </div>
-                    <div class="item-info">
-                        <div class="tags">${tagHTML}</div>
-                        <p class="title">${item.title}</p>
-                        <p class="price">${item.price}</p>
-                    </div>
+                    <a href="detail.html">
+                        <div class="img-box">
+                            <img src="${item.img}" alt="${item.title}">
+                        </div>
+                        <div class="item-info">
+                            <div class="tags">${tagHTML}</div>
+                            <p class="title">${item.title}</p>
+                            <p class="price">${item.price}</p>
+                        </div>
+                    </a>
                 `;
                 cateRight.appendChild(div);
             });
