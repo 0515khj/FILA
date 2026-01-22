@@ -267,7 +267,7 @@
 
 
 .detailRight .reduceBox .reduceRight {
-    background-image: url('images/reduce.png');
+    background-image: url('/images/reduce.png');
     background-repeat: no-repeat;
     background-position: center left 20px;
     display: flex;
