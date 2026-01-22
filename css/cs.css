@@ -1,13 +1,15 @@
+
+
 .csMain {
     padding-top: 180px;
     margin-bottom: 64px;
-    
+
 }
 
 .csMain .csTitle {}
 
 .csMain .csTitle h2 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -15,11 +17,11 @@
 .csMain .csBtnBox {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     width: 90%;
     max-width: 1400px;
     margin: 0 auto 80px;
-    
+
 }
 
 .csMain .csBtnBox button {
@@ -30,10 +32,10 @@
     text-align: left;
     border-bottom: 1px solid #999
 }
+
 .csMain .csBtnBox button.active {
     color: #1a1a1a;
     border-bottom: 2px solid #1a1a1a;
-    transition: 0.5s;
 }
 
 /* 공통 버튼 */
@@ -48,24 +50,27 @@
 
 /* section1 */
 
-.section1 {
-}
+.section1 {}
+
 .section1 .container {
     display: flex;
     gap: 50px;
 
 }
+
 .section1 .FAQLeft {
     width: 25%;
     display: flex;
     flex-direction: column;
 }
+
 .section1 .FAQLeft button {
     text-align: left;
     font-size: 18px;
     margin-bottom: 30px;
     border-bottom: 1px solid transparent;
 }
+
 .section1 .FAQLeft button.active {
     font-weight: bold;
     width: fit-content;
@@ -74,21 +79,27 @@
     line-height: 23px;
 }
 
-.section1 .FAQRight {width: 75%;}
+.section1 .FAQRight {
+    width: 75%;
+}
 
 
 .section1 .FAQRight .pagenation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:80px 0 50px ;
+    padding: 80px 0 50px;
 }
+
 .section1 .FAQRight .pagenation i {
     cursor: pointer;
 }
+
 .section1 .FAQRight .pagenation .number {
-    display: flex; gap: 10px;
+    display: flex;
+    gap: 10px;
 }
+
 .section1 .FAQRight .pagenation .number p {
     color: #999;
     display: flex;
@@ -96,10 +107,12 @@
     align-items: center;
     border: 1px solid #999;
     border-radius: 50%;
-    width: 25px; height: 25px;
+    width: 25px;
+    height: 25px;
     font-size: 14px;
     cursor: pointer;
 }
+
 .section1 .FAQRight .pagenation .number p.active {
     color: #1a1a1a;
     border: 1px solid #1a1a1a;
@@ -113,9 +126,11 @@
     width: 100%;
     display: none;
 }
+
 .section1 .FAQRight .rightSection.active {
     display: block;
 }
+
 .section1 .FAQRight .rightSection .FAQcontent {
     width: 100%;
     padding: 30px 10px;
@@ -126,14 +141,18 @@
 .section1 .FAQRight .rightSection .FAQcontent:last-child {
     border-bottom: none;
 }
+
 .section1 .FAQRight .rightSection .FAQcontent:nth-of-type(1) {
     padding-top: 0;
 }
+
 .section1 .FAQcontent .ques {}
+
 .section1 .FAQcontent .ques h4 {
     margin-bottom: 10px;
     font-size: 16px;
 }
+
 .section1 .FAQcontent .ques h3 {
     font-weight: bold;
     font-size: 18px;
@@ -153,14 +172,62 @@
 .section1 .FAQcontent.active .answ {
     display: block;
 }
-.section1 .FAQcontent .answ p {
-   
-}
+
+.section1 .FAQcontent .answ p {}
 
 
 /* section2 */
 
 .section2 {}
+
+.section2 .container {}
+
+.section2 .container .bestStore {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+}
+
+.section2 .container .bestStore .best {}
+
+.section2 .container .bestStore .best .img-box {}
+
+.section2 .container .bestStore .best .img-box img {
+    margin-bottom: 20px;
+}
+
+.section2 .container .bestStore .best .text-box {}
+
+.section2 .container .bestStore .best .text-box p {
+    color: #999;
+    font-size: 14px;
+}
+
+.section2 .container .bestStore .best .text-box p:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.section2 .container .bestStore .best .h3AndMark i {
+    color: #999;
+    cursor: pointer;
+}
+
+.section2 .container .bestStore .best .h3AndMark i:hover {
+    color: #000;
+}
+
+.section2 .container .bestStore .best .h3AndMark {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
 .section2 .container .storeInfo {
     display: flex;
     height: 700px;
@@ -236,7 +303,7 @@
     position: relative;
 }
 
-.mapLeft .inputBox .selectBox > div {
+.mapLeft .inputBox .selectBox>div {
     width: 50%;
 }
 
@@ -315,8 +382,9 @@
     margin-bottom: 5px;
     line-height: 1.4;
 }
+
 .mapLeft .storeList li.active {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
 }
 
 
@@ -412,6 +480,7 @@
     margin-top: -50px;
     margin-bottom: 100px;
 }
+
 .section4 .noticeWrap {
     display: flex;
     justify-content: space-between;
@@ -549,4 +618,153 @@
     font-size: 13px;
     color: #999;
     margin-top: 20px;
+}
+
+.section5 {}
+
+.section5 .section-title {}
+
+.section5 .section-title h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section5 .memberPart1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 90px;
+    margin-bottom: 30px;
+}
+
+.section5 .memberPart1 ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: end;
+    text-align: center;
+    color: #fff;
+}
+.section5 .memberPart1 ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section5 .memberPart1 ul li:nth-of-type(1) {
+    background: #00000066;
+    height: 100px;
+}
+
+.section5 .memberPart1 ul li:nth-of-type(2) {
+    background: #00000099;
+    height: 150px;
+}
+
+.section5 .memberPart1 ul li:nth-of-type(3) {
+    background: #000000cc;
+    height: 200px;
+}
+
+.section5 .memberPart1 ul li:nth-of-type(4) {
+    background: #000000;
+    height: 250px;
+}
+
+.section5 .memberPart1 ul li:nth-of-type(5) {
+    background: #002053;
+    height: 300px;
+}
+
+.section5 .memberPart {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+.section5 .memberPart h3 {
+    font-weight: 700;
+    font-size: 28px;
+}
+.section5 .memberPart h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section5 .memberPart p {
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+.section5 .memberPart .point {
+    text-align: center;
+}
+.section5 .memberPart .boonSub {
+    margin-bottom: 10px;
+}
+.section5 .memberPart .boonSub p:nth-of-type(2) {
+    color: #999;
+}
+
+.section5 .memberGuide {
+    padding-top: 50px;
+}
+
+.section5 .memberGuide .guideBox {
+    margin-bottom: 50px;
+}
+
+.section5 .memberGuide .guideBox:last-child {
+    margin-bottom: 0;
+}
+
+.section5 .memberGuide .guideBox h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.section5 .memberGuide .guideBox ul > li {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+.section5 .memberGuide .guideBox ul > li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.section5 .memberGuide .guideBox .sub-text {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    display: block;
+    padding-left: 0;
+}
+
+.section5 .memberGuide .guideBox .inner-list {
+    margin-top: 5px;
+    padding-left: 10px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.section5 .memberGuide .guideBox .inner-list li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.section5 .memberGuide .guideBox .inner-list li::before {
+    content: none;
 }

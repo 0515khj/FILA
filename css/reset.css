@@ -43,12 +43,17 @@ svg {
 img {
   display: block;
   object-fit: cover;
-    width: 100%;
+  width: 100%;
   height: auto;
 }
 
 /* 4) Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
 }
 
@@ -57,7 +62,9 @@ p {
 }
 
 /* 5) Lists */
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -97,15 +104,41 @@ table {
 }
 
 .container {
-  width: 90%; max-width: 1400px;
-  margin: 0 auto;
-}
-.section-title {
-  width: 90%; max-width: 1400px;
+  width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
+.section-title {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+  transition: 1s;
+}
+#top.active {
+  display: block;
+  transition: 1s;
+}
+
+#top p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

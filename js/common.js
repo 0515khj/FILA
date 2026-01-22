@@ -1,4 +1,20 @@
 
+const $top = document.querySelector('#top');
+
+$top.addEventListener('click',e=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+    return false;
+})
+window.addEventListener('scroll',e=>{
+    if (window.scrollY > 100) {
+        $top.classList.add('active');
+    }else{
+        $top.classList.remove('active');
+    }
+})
+
+
+
 
 document.addEventListener("DOMContentLoaded", async () => {
     try {
