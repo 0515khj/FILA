@@ -1,21 +1,4 @@
 
-const $top = document.querySelector('#top');
-
-$top.addEventListener('click',e=>{
-    window.scrollTo({top:0,behavior:'smooth'});
-    return false;
-})
-window.addEventListener('scroll',e=>{
-    if (window.scrollY > 100) {
-        $top.classList.add('active');
-    }else{
-        $top.classList.remove('active');
-    }
-})
-
-
-
-
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         const [header, footer] = await Promise.all([
@@ -31,9 +14,27 @@ document.addEventListener("DOMContentLoaded", async () => {
         headerEvent();
         footerEvent();
 
+        const $top = document.querySelector('#top');
+
+        if ($top) {
+            $top.addEventListener('click', e => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return false;
+            });
+
+            window.addEventListener('scroll', e => {
+                if (window.scrollY > 100) {
+                    $top.classList.add('active');
+                } else {
+                    $top.classList.remove('active');
+                }
+            });
+        }
+
+
 
     } catch (error) {
-        console.log('헤더 에러')
+        console.log('에러 상세 내용:', error);
     }
 })
 
@@ -146,7 +147,7 @@ function headerEvent() {
 let menu = null;
 
 const loadMenu = async () => {
-    const response = await fetch('data/submenu.json');
+    const response = await fetch('/data/submenu.json');
     menu = await response.json();
 }
 
@@ -164,22 +165,26 @@ function getSubMenu(menuValue) {
     if (data.type === "tennis") {
         sub.innerHTML = `
          <div class="container megaMenu tennisMenu">
-        <div class="left">
-            <h3>${data.featureTitle}</h3>
-            <ul>
-                ${data.feature.map(item => `<li>${item}</li>`).join("")}
-            </ul>
-        </div>
-
+         <div class="left">
+         <a href="SubPage.html">
+                <h3>${data.featureTitle}</h3>
+                <ul>
+                    ${data.feature.map(item => `<li>${item}</li>`).join("")}
+                </ul>
+                </a>
+            </div>
         <div class="right">
-            <div class="rightInleft">
-                ${data.columns.map(col => `
-                    <div class="col">
-                        <h4>${col.title}</h4>
+        <div class="rightInleft">
+        ${data.columns.map(col => `
+            
+                <div class="col">
+                    <h4>${col.title}</h4>
+                    <a href="SubPage.html">
                         <ul>
                         ${col.items.map(item => `<li>${item}</li>`).join("")}
                         </ul>
-                    </div>`).join("")}
+                    </a>
+                </div>`).join("")}
                     <a href="#" class="tennisServiceBtn">
                         🎾 테니스화 커스텀 서비스
                     </a>
@@ -227,18 +232,22 @@ function getSubMenu(menuValue) {
     <div class="container megaMenu ${typeKids}">
         <div class="left">
             <h3>${data.featureTitle}</h3>
+            <a href="SubPage.html">
             <ul>
                 ${data.feature.map(item => `<li>${item}</li>`).join("")}
             </ul>
+            </a>
         </div>
 
         <div class="right">
             ${data.columns.map(col => `
                 <div class="col">
                     <h4>${col.title}</h4>
+                    <a href="SubPage.html">
                     <ul>
                         ${col.items.map(item => `<li>${item}</li>`).join("")}
                     </ul>
+                    </a>
                 </div>
                 `).join("")}
         </div>

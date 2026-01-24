@@ -70,6 +70,7 @@ li {
 
 /* 6) Links */
 a {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
 }
@@ -121,6 +122,8 @@ table {
   bottom: 50px;
   display: none;
   transition: 1s;
+  background: #fff;
+  cursor: pointer;
 }
 #top.active {
   display: block;

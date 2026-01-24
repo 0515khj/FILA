@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
     let bestData = null;
 
-    fetch('data/bestItem.json')
+    fetch('/data/bestItem.json')
         .then(response => response.json())
         .then(data => {
             bestData = data;

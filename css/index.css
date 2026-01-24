@@ -265,9 +265,10 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
+
 .section2 .section-title button:hover {
     border: 1px solid #fff;
-    
+
 }
 
 .section2 .container {}
@@ -357,7 +358,7 @@
     font-weight: 700;
     margin-bottom: 30px;
     color: #424242;
-    
+
 }
 
 .section3 .container {}
@@ -376,8 +377,9 @@
     color: #666;
     cursor: pointer;
 }
+
 .section3 .filter .allBtn:hover {
-    border-color:#000;
+    border-color: #000;
     color: #000;
 }
 
@@ -708,22 +710,291 @@
     overflow: hidden;
     position: relative;
 }
+
 .section5 .img-box .img1 i {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 40px;
     opacity: 0;
 }
+
 .section5 .img-box .img1:hover i {
     opacity: 1;
 }
+
 .section5 .img-box .img1:hover img {
     transform: scale(1.1);
     filter: brightness(70%);
 }
+
 .section5 .img-box .img1 i:hover {
     color: #fff;
 }
+
 .section5 .img-box .img1 img {
     transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* section1 */
+    .section1 .container .best {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    /* section2 */
+    .section2 .specialBox {
+        flex-direction: column;
+    }
+
+    .section2 .specialBox .specialitem {
+        height: auto;
+    }
+
+    .section2 .specialBox .specialitem .left,
+    .section2 .specialBox .specialitem .right {
+        width: 100%;
+    }
+
+    .section2 .specialBox .specialitem .right {
+        padding: 40px;
+    }
+
+    /* section4 */
+    .categoryBox {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .categoryBox .cateLeft {
+        width: 100%;
+        height: 400px;
+    }
+
+    .categoryBox .cateRight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* 공통 타이틀 */
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    /* 메인 배너 */
+    .mainBanner .swiper-slide .text-box {
+        width: 90%;
+    }
+
+    /* section1 */
+    .section1 .container .best {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .section1 .container .best .bestItem {
+        width: 100%;
+    }
+
+    /* section2 */
+    .section2 {
+        padding: 60px 0;
+    }
+
+    .section2 .specialBox .specialitem .right .text-box {
+        margin-bottom: 30px;
+    }
+
+    /* section3 */
+    .section3 .styleImgBox.active {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* section4 */
+    .section4 .filter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .section4 .subFilter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .categoryBox .cateRight {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .cateItem .img-box {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    /* section5 */
+    .section5 .img-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section5 .img-box .img1 {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* 메인 배너 */
+    .mainBanner .swiper-slide .text-box h2 {
+        font-size: 32px;
+    }
+
+    .mainBanner .swiper-slide .text-box p {
+        font-size: 14px;
+    }
+
+    /* section1 */
+    .section1 .container .best {
+        grid-template-columns: 1fr;
+    }
+
+    .inner .section1 .section-title {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .section1 .section-title h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .section1 .container .filter {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section1 .container .filter .filterBtn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+
+    .section1 .container .filter .moveBtn {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
+
+    /* section2 */
+
+    .section2 .specialBox {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .section2 .specialBox .specialitem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* section3 */
+    .section3 .styleImgBox.active {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* section4 */
+    .categoryBox .cateRight {
+        grid-template-columns: 1fr;
+    }
+
+    .section4 .subFilter {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 40px;
+}
+
+.section4 .subFilter .subLinks {
+    display: flex;
+     justify-self: start;
+    gap: 15px;
+}
+
+.section4 .subFilter .subLinks button {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #aaa;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.section4 .subFilter .subLinks button.active {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.section4 .subFilter .subLinks button:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -18px;
+    color: #eee;
+    font-size: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section4 .subFilter .moreView {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 16px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    justify-self: end;
+}
+
+
+    /* section5 */
+    .section5 .img-box {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .section5 .img-box .img1 {
+        height: 220px;
+    }
+
+
+    .section5 .section-title {
+        margin-bottom: 30px;
+    }
+    .section5 .section-title h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+.section5 .section-title p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+    /* top 버튼 */
+    #top {
+        right: 20px;
+        bottom: 20px;
+    }
 }
