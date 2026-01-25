@@ -473,12 +473,434 @@ button {
     background: #999;
 }
 
-@media (max-width: 1200px) {
-    .productGrid { grid-template-columns: repeat(3, 1fr); }
+.productItem .imgBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 768px) {
-    .mainContent { flex-direction: column; }
-    .leftMenu { width: 100%; margin-bottom: 30px; margin-right: 0; }
-    .productGrid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media screen and (max-width: 1024px) {
+
+    /* SUB MAIN */
+    .subMain {
+        width: 95%;
+        margin-top: 160px;
+    }
+
+    /* SUB TITLE */
+    .subTitle {
+        top: 90px;
+        padding: 18px 0;
+    }
+
+    .breadcrumb a {
+        font-size: 28px;
+    }
+
+    .titleLeft button {
+        font-size: 13px;
+    }
+
+    .titleRight {
+        gap: 15px;
+    }
+
+    /* MAIN CONTENT */
+    .mainContent {
+        padding-top: 35px;
+        padding-bottom: 80px;
+    }
+
+    .leftMenu {
+        width: 180px;
+        margin-right: 40px;
+        top: 180px;
+    }
+
+    .leftMenu .total {
+        font-size: 13px;
+    }
+
+    .cateList li a {
+        font-size: 14px;
+    }
+
+    .filterGroup .filterToggle {
+        font-size: 13px;
+    }
+
+    .checkList label {
+        font-size: 13px;
+    }
+
+    /* PRODUCT GRID */
+    .productGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .productItem .infoBox .name {
+        font-size: 14px;
+    }
+
+    .productItem .infoBox .price {
+        font-size: 15px;
+    }
+
+}
+
+/* ==================== 
+   768px 이하 반응형 (태블릿 세로)
+==================== */
+
+@media screen and (max-width: 768px) {
+
+    /* SUB MAIN */
+    .subMain {
+        width: 95%;
+        margin-top: 140px;
+    }
+
+    /* SUB TITLE */
+    .subTitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        top: 80px;
+        padding: 15px 0;
+    }
+
+    .titleLeft {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .breadcrumb {
+        width: 100%;
+    }
+
+    .breadcrumb a {
+        font-size: 24px;
+    }
+
+    .filterBtn {
+        margin-right: 10px;
+    }
+
+    .titleRight {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* MAIN CONTENT */
+    .mainContent {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .leftMenu {
+        position: static;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        max-height: none;
+        padding-right: 0;
+    }
+
+    .leftMenu.hide {
+        display: none;
+    }
+
+    .categoryArea {
+        margin-bottom: 25px;
+    }
+
+    .cateList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cateList li {
+        margin-bottom: 0;
+        flex: 0 0 auto;
+    }
+
+    .cateList li a {
+        display: inline-block;
+        padding: 8px 15px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+
+    .cateList li.active a {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+    .cateList li .count {
+        display: none !important;
+    }
+
+    .filterContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .filterGroup {
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+    .filterGroup .sizeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filterGroup .sizeGrid button {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    /* PRODUCT GRID */
+    .productGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .productItem .imgBox {
+        margin-bottom: 12px;
+    }
+
+    .productItem .miniImg {
+        height: 50px;
+        max-width: 40px;
+    }
+
+    .productItem .infoBox .tags {
+        font-size: 10px;
+    }
+
+    .productItem .infoBox .name {
+        font-size: 13px;
+    }
+
+    .productItem .infoBox .price {
+        font-size: 14px;
+    }
+
+    .productItem .infoBox .rating {
+        font-size: 11px;
+    }
+
+    .heartBtn {
+        font-size: 18px;
+    }
+
+}
+
+/* ==================== 
+   480px 이하 반응형 (모바일)
+==================== */
+
+@media screen and (max-width: 480px) {
+
+    /* SUB MAIN */
+    .subMain {
+        width: 100%;
+        margin-top: 120px;
+        padding: 0 15px;
+    }
+
+    /* SUB TITLE */
+    .subTitle {
+        top: 70px;
+        padding: 12px 0;
+    }
+
+    .titleLeft {
+        gap: 12px;
+    }
+
+    .breadcrumb a {
+        font-size: 20px;
+    }
+
+    .breadcrumb .current {
+        font-size: 14px;
+    }
+
+    .filterBtn {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .titleLeft .compareBtn {
+        font-size: 12px;
+    }
+
+    .titleRight {
+        gap: 12px;
+    }
+
+    .sortOption .selected {
+        font-size: 12px;
+    }
+
+    .sortOption .dropdown {
+        width: 90px;
+    }
+
+    .viewType button i {
+        font-size: 16px;
+    }
+
+    /* MAIN CONTENT */
+    .mainContent {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .leftMenu {
+        margin-bottom: 25px;
+    }
+
+    .leftMenu .total {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .cateList {
+        gap: 8px;
+    }
+
+    .cateList li a {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .filterContainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .filterGroup {
+        padding-top: 12px;
+    }
+
+    .filterGroup .filterToggle {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .checkList label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .filterGroup .colorGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+    }
+
+    .colorBtn {
+        width: 22px;
+        height: 22px;
+    }
+
+    .filterGroup .sizeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .filterGroup .sizeGrid button {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .priceLabels .priceGap {
+        font-size: 12px;
+    }
+
+    .priceLabels .priceGap span::after {
+        width: 16px;
+        height: 16px;
+    }
+
+    .priceLabels .line {
+        height: 4px;
+    }
+
+    /* PRODUCT GRID */
+    .productGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .productItem .imgBox {
+        margin-bottom: 10px;
+    }
+
+    .productItem .miniImg {
+        height: 45px;
+        max-width: 35px;
+        margin-bottom: 8px;
+    }
+
+    .productItem .infoBox .tags {
+        font-size: 9px;
+        padding: 2px 4px;
+        margin-bottom: 6px;
+    }
+
+    .productItem .infoBox .name {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .productItem .infoBox .price {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .productItem .infoBox .rating {
+        font-size: 10px;
+    }
+
+    .heartBtn {
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+    }
+
+    .emptyItem {
+        font-size: 20px;
+        height: 300px;
+    }
+
+    .productItem:hover .infoBox {
+        transform: none;
+    }
+
+    .productItem:hover .infoBox .tags {
+        display: inline-block;
+    }
+
+    .productItem:hover .miniImg {
+        opacity: 0;
+    }
+
+    .productItem .imgBox .img-all img:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .productItem:hover .imgBox .img-all img:nth-of-type(2) {
+        opacity: 0;
+    }
+
 }

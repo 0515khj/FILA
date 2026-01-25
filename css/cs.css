@@ -6,8 +6,6 @@
 
 }
 
-.csMain .csTitle {}
-
 .csMain .csTitle h2 {
     font-size: 40px;
     text-align: center;
@@ -767,4 +765,585 @@
 
 .section5 .memberGuide .guideBox .inner-list li::before {
     content: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* CS MAIN */
+    .csMain {
+        padding-top: 150px;
+    }
+
+    .csMain .csTitle h2 {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .csMain .csBtnBox {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .csMain .csBtnBox button {
+        font-size: 20px;
+    }
+
+    /* SECTION 1 - FAQ */
+    .section1 .container {
+        gap: 40px;
+    }
+
+    .section1 .FAQLeft {
+        width: 30%;
+    }
+
+    .section1 .FAQLeft button {
+        font-size: 16px;
+    }
+
+    .section1 .FAQRight {
+        width: 70%;
+    }
+
+    .section1 .FAQcontent .ques h3 {
+        font-size: 17px;
+    }
+
+    .section1 .FAQcontent .answ {
+        padding: 40px 30px;
+        font-size: 15px;
+    }
+
+    /* SECTION 2 - 매장안내 */
+    .section2 .container .bestStore {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+    }
+
+    .section2 .container .storeInfo {
+        height: 600px;
+    }
+
+    .mapLeft {
+        width: 40%;
+    }
+
+    .mapRight {
+        width: 60%;
+    }
+
+    /* SECTION 3 - A/S 안내 */
+    .section3 .asContent {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section3 .leftBox,
+    .section3 .rightBox {
+        width: 100%;
+    }
+
+    /* SECTION 4 - 공지사항 */
+    .section4 .noticeWrap {
+        height: 600px;
+    }
+
+    /* SECTION 5 - 멤버십 */
+    .section5 .memberPart {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px;
+    }
+
+    .section5 .memberPart h3 {
+        font-size: 24px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* CS MAIN */
+    .csMain {
+        padding-top: 130px;
+    }
+
+    .csMain .csTitle h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .csMain .csBtnBox {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 60px;
+    } 
+
+    
+
+
+    .csMain .csBtnBox button {
+        font-size: 18px;
+        flex: 1 1 calc(50% - 5px);
+        min-width: calc(50% - 5px);
+    }
+
+    /* SECTION 1 - FAQ */
+    .section1 .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section1 .FAQLeft {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section1 .FAQLeft button {
+        flex: 1 1 calc(50% - 5px);
+        margin-bottom: 0;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .section1 .FAQLeft button.active {
+        border: 2px solid #000;
+        background: #f5f5f5;
+    }
+
+    .section1 .FAQRight {
+        width: 100%;
+    }
+
+    .section1 .FAQRight .pagenation {
+        padding: 60px 0 40px;
+    }
+
+    .section1 .FAQcontent .ques h3 {
+        font-size: 16px;
+    }
+
+    .section1 .FAQcontent .answ {
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+
+    /* SECTION 2 - 매장안내 */
+    .section2 .container .bestStore {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .section2 .container .storeInfo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .mapLeft {
+        width: 100%;
+        height: 400px;
+    }
+
+    .mapRight {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* SECTION 3 - A/S 안내 */
+    .section3 .asContent {
+        padding: 40px 0;
+    }
+
+    .section3 .leftBox .textBox h3 {
+        font-size: 18px;
+    }
+
+    .section3 .leftBox .textBox p {
+        font-size: 14px;
+    }
+
+    .section3 .leftBox .goStoreBtn {
+        width: 100%;
+        height: 55px;
+    }
+
+    /* SECTION 4 - 공지사항 */
+    .section4 .noticeWrap {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section4 .noticeLeft {
+        width: 100%;
+        height: 350px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .section4 .noticeRight {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .section4 .noticeRight .viewArea {
+        min-height: 400px;
+    }
+
+    /* SECTION 5 - 멤버십 */
+    .section5 .section-title h3 {
+        font-size: 20px;
+    }
+
+    .section5 .memberPart1 ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section5 .memberPart1 ul li:nth-of-type(4),
+    .section5 .memberPart1 ul li:nth-of-type(5) {
+        display: none;
+    }
+
+    .section5 .memberPart {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+    }
+
+    .section5 .memberPart h3 {
+        font-size: 22px;
+    }
+
+    .section5 .memberPart h4 {
+        font-size: 15px;
+    }
+
+    .section5 .memberPart p {
+        font-size: 14px;
+    }
+
+    .section5 .memberGuide .guideBox h3 {
+        font-size: 18px;
+    }
+
+    .section5 .memberGuide .guideBox ul > li {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* CS MAIN */
+    .csMain {
+        padding-top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .csMain .csTitle h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .csMain .csBtnBox {
+        width: 90%;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    .csMain .csBtnBox button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 10px;
+        text-align: center;
+    }
+
+    /* SECTION 1 - FAQ */
+    .section1 .FAQLeft {
+        gap: 8px;
+    }
+
+    .section1 .FAQLeft button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .section1 .FAQRight .pagenation {
+        padding: 50px 0 30px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section1 .FAQRight .pagenation .number {
+        order: 1;
+    }
+
+    .section1 .FAQRight .pagenation i:first-child {
+        order: 0;
+    }
+
+    .section1 .FAQRight .pagenation i:last-child {
+        order: 2;
+    }
+
+    .section1 .FAQcontent {
+        padding: 25px 5px;
+    }
+
+    .section1 .FAQcontent .ques h4 {
+        font-size: 13px;
+    }
+
+    .section1 .FAQcontent .ques h3 {
+        font-size: 15px;
+    }
+
+    .section1 .FAQcontent .answ {
+        padding: 25px 15px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /* SECTION 2 - 매장안내 */
+    .section2 .container .bestStore {
+        gap: 25px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .section2 .container .bestStore .best .text-box p {
+        font-size: 13px;
+    }
+
+    .section2 .container .bestStore .best .h3AndMark {
+        font-size: 18px;
+    }
+
+    .mapLeft .inputBox {
+        padding: 15px;
+    }
+
+    .mapLeft .inputBox .search input,
+    .mapLeft .inputBox .selectBox button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .mapLeft .storeList {
+        padding: 0 15px;
+    }
+
+    .mapLeft .storeList li {
+        padding: 20px 15px;
+    }
+
+    .mapLeft .storeList li h3 {
+        font-size: 16px;
+    }
+
+    .mapLeft .storeList li p {
+        font-size: 13px;
+    }
+
+    .mapRight {
+        height: 350px;
+    }
+
+    /* SECTION 3 - A/S 안내 */
+    .section3 .asContent {
+        padding: 30px 0;
+    }
+
+    .section3 .leftBox .textBox {
+        margin-bottom: 30px;
+    }
+
+    .section3 .leftBox .textBox h3 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .section3 .leftBox .textBox p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .section3 .leftBox .goStoreBtn {
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .section3 .rightBox .searchBar input {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .section3 .rightBox .searchBar button {
+        width: 70px;
+        font-size: 14px;
+    }
+
+    .section3 .rightBox p {
+        font-size: 13px;
+    }
+
+    /* SECTION 4 - 공지사항 */
+    .section4 {
+        margin-top: -40px;
+        margin-bottom: 80px;
+    }
+
+    .section4 .noticeLeft {
+        height: 300px;
+    }
+
+    .section4 .noticeLeft .categorySelect {
+        padding: 15px;
+    }
+
+    .section4 .noticeLeft .categorySelect select {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .section4 .noticeLeft .nList li {
+        padding: 20px 15px;
+    }
+
+    .section4 .noticeLeft .nList li .listTop {
+        font-size: 12px;
+    }
+
+    .section4 .noticeLeft .nList li .title {
+        font-size: 14px;
+    }
+
+    .section4 .noticeRight .searchArea {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .section4 .noticeRight .searchArea input {
+        width: 100%;
+    }
+
+    .section4 .noticeRight .searchArea button {
+        width: 100%;
+    }
+
+    .section4 .noticeRight .viewHeader h3 {
+        font-size: 20px;
+        padding: 25px 0;
+    }
+
+    .section4 .noticeRight .textDesc p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .section4 .noticeRight .viewArea {
+        min-height: 350px;
+    }
+
+    /* SECTION 5 - 멤버십 */
+    .section5 .section-title h3 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .section5 .memberPart1 {
+        padding-bottom: 60px;
+        margin-bottom: 25px;
+    }
+
+    .section5 .memberPart1 ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section5 .memberPart1 ul li {
+        font-size: 20px;
+    }
+
+    .section5 .memberPart1 ul li:nth-of-type(1) {
+        height: 80px;
+    }
+
+    .section5 .memberPart1 ul li:nth-of-type(2) {
+        height: 120px;
+    }
+
+    .section5 .memberPart1 ul li:nth-of-type(3) {
+        height: 160px;
+    }
+
+    .section5 .memberPart1 ul li:nth-of-type(4),
+    .section5 .memberPart1 ul li:nth-of-type(5) {
+        display: none;
+    }
+
+    .section5 .memberPart {
+        padding: 35px 0;
+    }
+
+    .section5 .memberPart h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section5 .memberPart h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .section5 .memberPart p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .section5 .memberPart .boonSub {
+        margin-bottom: 8px;
+    }
+
+    .section5 .memberGuide {
+        padding-top: 40px;
+    }
+
+    .section5 .memberGuide .guideBox {
+        margin-bottom: 40px;
+    }
+
+    .section5 .memberGuide .guideBox h3 {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+
+    .section5 .memberGuide .guideBox ul > li {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 10px;
+    }
+
+    .section5 .memberGuide .guideBox .sub-text {
+        font-size: 12px;
+    }
+
+    .section5 .memberGuide .guideBox .inner-list {
+        padding: 12px;
+    }
+
+    .section5 .memberGuide .guideBox .inner-list li {
+        font-size: 12px;
+    }
+
 }
