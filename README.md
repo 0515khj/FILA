@@ -169,8 +169,6 @@ fetch('/data/bestItem.json')
 - **Scale**: 48px (H1) → 11px (Caption)
 
 
-**주의**: JSON 파일을 불러오기 때문에 로컬 서버 환경에서 실행해야 합니다.
-
 ## 📊 구현 체크리스트
 
 ### 메인 페이지
