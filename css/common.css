@@ -160,7 +160,8 @@ header .userInfo a p:hover {
 
 
 header .userWrap:hover .userInfo {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile {

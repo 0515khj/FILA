@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
         }
 
-
-
     } catch (error) {
         console.log('에러 상세 내용:', error);
     }

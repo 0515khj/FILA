@@ -120,6 +120,7 @@ table {
   position: fixed;
   right: 50px;
   bottom: 50px;
+  z-index: 1000;
   display: none;
   transition: 1s;
   background: #fff;
@@ -138,6 +139,13 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+    #top {
+        right: 15px;
+        bottom: 15px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {

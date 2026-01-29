@@ -481,15 +481,13 @@ button {
 
 @media screen and (max-width: 1024px) {
 
-    /* SUB MAIN */
     .subMain {
         width: 95%;
         margin-top: 160px;
     }
 
-    /* SUB TITLE */
     .subTitle {
-        top: 90px;
+        top: 110px;
         padding: 18px 0;
     }
 
@@ -505,7 +503,6 @@ button {
         gap: 15px;
     }
 
-    /* MAIN CONTENT */
     .mainContent {
         padding-top: 35px;
         padding-bottom: 80px;
@@ -533,7 +530,6 @@ button {
         font-size: 13px;
     }
 
-    /* PRODUCT GRID */
     .productGrid {
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
@@ -549,24 +545,20 @@ button {
 
 }
 
-/* ==================== 
-   768px 이하 반응형 (태블릿 세로)
-==================== */
+/* 반응형 (태블릿 세로) */
 
 @media screen and (max-width: 768px) {
 
-    /* SUB MAIN */
     .subMain {
         width: 95%;
         margin-top: 140px;
     }
 
-    /* SUB TITLE */
     .subTitle {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
-        top: 80px;
+        top: 60px;
         padding: 15px 0;
     }
 
@@ -593,7 +585,6 @@ button {
         justify-content: space-between;
     }
 
-    /* MAIN CONTENT */
     .mainContent {
         flex-direction: column;
         padding-top: 30px;
@@ -666,7 +657,6 @@ button {
         font-size: 13px;
     }
 
-    /* PRODUCT GRID */
     .productGrid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -703,22 +693,18 @@ button {
 
 }
 
-/* ==================== 
-   480px 이하 반응형 (모바일)
-==================== */
+/* 반응형 (모바일) */
 
 @media screen and (max-width: 480px) {
 
-    /* SUB MAIN */
     .subMain {
         width: 100%;
         margin-top: 120px;
         padding: 0 15px;
     }
 
-    /* SUB TITLE */
     .subTitle {
-        top: 70px;
+        top: 60px;
         padding: 12px 0;
     }
 
@@ -759,7 +745,6 @@ button {
         font-size: 16px;
     }
 
-    /* MAIN CONTENT */
     .mainContent {
         padding-top: 25px;
         padding-bottom: 50px;
