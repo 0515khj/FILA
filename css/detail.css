@@ -1021,5 +1021,10 @@
     .size .sizebox1 .rightBox .right2 .right2textBox {
         padding: 15px 0; 
     }
+    #top {
+        right:10px;
+        bottom:10px;
+    }
+    
 }
     
