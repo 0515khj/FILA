@@ -48,7 +48,9 @@ document.addEventListener("DOMContentLoaded", e => {
                     <p>
                         <span style="text-decoration:line-through; color:#ccc; font-size:0.8em; margin-right:5px">${item.originalPrice}</span>
                         <span>${item.price}</span>
-                        <span style="color:#ff0000; font-weight:bold; margin-left:5px">${item.sale}</span>
+                        <span style="color:#ff0000; font-weight:bold; margin-left:5px">
+                        ${item.sale}
+                        </span>
                     </p>
                     `;
             } else {

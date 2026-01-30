@@ -99,6 +99,8 @@
     gap: 5px;
     font-size: 14px;
     border: 1px solid #ddd;
+    background-repeat: no-repeat;
+    background-position: center left 20px;
 }
 
 .join .joinBoon .boon1 img {
@@ -111,18 +113,26 @@
     height: 44px;
 }
 .join .joinBoon .boon:nth-of-type(1) {
-    background-image: url('images/joinCu.png');
+    background-image: url('/images/joinCu.png');
 }
 .join .joinBoon .boon:nth-of-type(2) {
-    background-image: url('images/joinPo.png');
+    background-image: url('/images/joinPo.png');
 }
 .join .joinBoon .boon:nth-of-type(3) {
-    background-image: url('images/joinCo.png');
+    background-image: url('/images/joinCo.png');
 }
 .join .joinBoon .boon:nth-of-type(4) {
-    background-image: url('images/joinDe.png');
+    background-image: url('/images/joinDe.png');
 }
-.join .joinBoon .boon {
-    background-repeat: no-repeat;
-    background-position: center left 20px;
+
+
+@media screen and (max-width:480px) {
+ 
+    
+    .join .joinBoon .boon {
+    padding: 0 0px 0 60px;
+    font-size: 12px;
+    background-position: center left 10px;
+}
+
 }

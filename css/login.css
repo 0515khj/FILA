@@ -175,3 +175,9 @@ text-align: center;
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width:480px) {
+    .login .loginBox .socialLogin .social p {
+        font-size: 14px;
+    }
+}

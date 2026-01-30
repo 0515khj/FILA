@@ -1125,6 +1125,10 @@
         grid-template-columns: 1fr;
     }
 
+    .section1 .container .best .img-box {
+        height: 380px;
+    }
+
     .inner .section1 .section-title {
         align-items: center;
         margin-bottom: 50px;
@@ -1179,9 +1183,7 @@
 
     .section2 .specialBox .specialitem .left {
         width: 100%;
-        /* 50%에서 100%로 변경 */
-        height: 300px;
-        /* 적절한 높이 지정 */
+        height: 420px;
     }
 
     .section2 .specialBox .specialitem .left .img-box {
@@ -1191,17 +1193,13 @@
 
     .section2 .specialBox .specialitem .left .img-box img {
         width: 100%;
-        /* 이미지 너비 100% 추가 */
         height: 100%;
         object-fit: cover;
-        /* 비율 유지하며 채우기 */
     }
 
     .section2 .specialBox .specialitem .right {
         width: 100%;
-        /* 50%에서 100%로 변경 */
         padding: 30px 20px;
-        /* 패딩 조정 */
     }
 
     .section2 .specialBox .specialitem .right .text-box {

@@ -23,15 +23,13 @@ html {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 3) Media elements */
 img,
 picture,
 video,
