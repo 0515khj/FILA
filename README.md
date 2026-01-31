@@ -6,7 +6,7 @@
 
 FILA Korea 공식 웹사이트의 사용성 문제를 분석하고 현대적인 UI/UX를 적용하여 개선한 개인 포트폴리오 프로젝트입니다.
 
-**개발 기간**: 2026.01.20 ~ 2026.01.27 (약 1주일)
+**개발 기간**: 2026.01.19 ~ 2026.01.26 (약 1주일)
 
 ## 🎯 개발 동기
 
@@ -109,25 +109,7 @@ function setCategoryEvent() {
 }
 ```
 
-### 2. 실시간 가격 계산 (detail.js)
-```javascript
-// 수량 변경에 따른 가격 업데이트
-const basePrice = 259000;
-
-function updatePrice(quantity) {
-    const totalPrice = basePrice * quantity;
-    priceSpan.textContent = totalPrice.toLocaleString();
-}
-
-plusBtn.addEventListener('click', function() {
-    let num = parseInt(currentNumber.textContent);
-    num++;
-    currentNumber.textContent = num;
-    updatePrice(num);
-});
-```
-
-### 3. JSON 데이터 활용 (index.js)
+### 2. JSON 데이터 활용 (index.js)
 ```javascript
 // 비동기로 상품 데이터 로드
 fetch('/data/bestItem.json')
@@ -152,21 +134,12 @@ fetch('/data/bestItem.json')
 
 ### Color Palette
 ```css
-/* Primary Colors */
---brand-navy: #001E62;
---brand-red: #DC001A;
 
-/* Grayscale */
---gray-900: #1A1A1A;
---gray-700: #4A4A4A;
---gray-500: #767676;
---gray-300: #C4C4C4;
---gray-100: #F5F5F5;
 ```
 
 ### Typography
-- **Font**: Pretendard (Korean), Roboto (English)
-- **Scale**: 48px (H1) → 11px (Caption)
+- Font : Pretendard 
+
 
 
 ## 📊 구현 체크리스트
