@@ -105,8 +105,13 @@ function headerEvent() {
 
     document.querySelectorAll(".headerLine2 li").forEach(li => {
         li.addEventListener("mouseenter", e => {
-            getSubMenu(li.textContent.trim());
-            header.classList.add('active');
+            const link = li.querySelector('a');
+            const menuName = link.dataset.menu;
+            // getSubMenu(li.textContent.trim());
+            if(menuName){
+                getSubMenu(menuName);
+                header.classList.add('active');
+            }
         })
     })
     sub.addEventListener('mouseenter', e => {
@@ -173,8 +178,8 @@ function getSubMenu(menuValue) {
             </div>
         <div class="right">
         <div class="rightInleft">
+
         ${data.columns.map(col => `
-            
                 <div class="col">
                     <h4>${col.title}</h4>
                     <a href="SubPage.html">
